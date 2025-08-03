@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>For Kuchupuchuu 💖</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff0f5;
+      background-size: cover;
+      transition: background 0.5s ease-in-out;
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+<body>
+
+<!-- You can paste the complete body content and scripts from the last working version here -->
+
+<script>
+  window.onload = function() {
+    document.getElementById("showReview").addEventListener("click", () => {
+      reviewPopup.style.display = "none";
+      reviewStars.style.display = "flex";
+    });
+
+    const starsSpans = document.querySelectorAll("#stars span");
+    starsSpans.forEach((star, index) => {
+      star.addEventListener("click", () => {
+        rateStar(index + 1);
+      });
+    });
+  };
+</script>
+
+</body>
+</html>
